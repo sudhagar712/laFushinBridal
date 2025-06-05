@@ -8,7 +8,7 @@ import ShotOfTheDay from '../Components/ShotOfTheDay'
 const LandingPage = () => {
   return (
     <div>
-      {/* <Banner /> */}
+      <Banner />
 
       <PhotographySection />
       <ShotOfTheDay/>
