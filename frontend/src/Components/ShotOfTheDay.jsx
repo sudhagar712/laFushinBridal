@@ -1,28 +1,32 @@
 import React from "react";
+import bride1 from "../assets/images/bride1.jpg"
+import bride2 from "../assets/images/bride2.webp";
+import bride3 from "../assets/images/bride3.jpeg";
+
 
 const shots = [
   {
     title: "Love In Focus",
-    image: "https://your-image-url-1.jpg"
+    image: bride1
   },
   {
     title: "Forever Captured",
-    image: "https://your-image-url-2.jpg"
+    image: bride2
   },
   {
     title: "Timeless Romance",
-    image: "https://your-image-url-3.jpg"
+    image: bride3
   }
 ];
 
 const ShotOfTheDay = () => {
   return (
-    <section className="bg-gradient-to-b from-[#0f4c75] via-[#3282b8] to-[#d9caa6] py-16 px-4">
-      <h2 className="text-white text-3xl md:text-4xl font-cursive text-center mb-12 drop-shadow-md">
+    <section className="py-4">
+      <h2 className="text-yellow-400  text-3xl md:text-6xl font-cursive text-center mb-12 drop-shadow-md">
         Shot Of The Day
       </h2>
 
-      <div className="max-w-7xl mx-auto grid gap-10 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
+      <div className="max-w-2xl mx-auto grid gap-10 sm:grid-cols-2 lg:grid-cols-3 place-items-center">
         {shots.map((shot, index) => (
           <div key={index} className="text-center">
             <img
