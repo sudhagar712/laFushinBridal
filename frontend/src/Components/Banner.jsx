@@ -39,9 +39,8 @@ const Banner = () => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
     }, 7000);
-
-    return () => clearInterval(interval); // cleanup
-  }, []);
+    return () => clearInterval(interval);
+  }, [current]);
 
   const nextSlide = () => {
     setCurrent((prev) => (prev + 1) % slides.length);
@@ -79,7 +78,7 @@ const Banner = () => {
           {description}
         </p>
         <div className="flex gap-5">
-          <button className="border mt-4 py-2 border-yellow-500 px-4 uppercase text-[10px] md:text-md w-fit">
+          <button className="border mt-4 py-2 border-yellow-500 px-4 uppercase text-[10px] md:text-md hover:bg-yellow-500 hover:text-black transition">
             Call us
           </button>
           <button className="border mt-4 py-2 border-yellow-500 px-4 uppercase text-[10px] md:text-md w-fit">

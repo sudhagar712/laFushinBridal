@@ -4,7 +4,6 @@ import { FiMenu, FiX } from "react-icons/fi";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  
 
   return (
     <header className="absolute top-0 left-0 w-full z-50">
