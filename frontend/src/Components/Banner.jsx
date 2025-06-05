@@ -1,42 +1,34 @@
 import React, { useState, useEffect } from "react";
 import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import hair from "../assets/images/ban1.mp4"
+import hair2 from "../assets/images/ban2.mp4";
+import hair3 from "../assets/images/ban3.mp4";
+
+
+
+
 
 const slides = [
   {
-    title: "WELLNESS CENTER",
+    title: "Stylish HairCut",
     description:
       "Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Duis at tellus at urna CALISTA's mattis. Viverra tellus in hac habitasse platea dictumst.",
-    video:
-      "https://videos.pexels.com/video-files/3998263/3998263-uhd_2732_1440_25fps.mp4"
+    video: hair
+  },
+
+  {
+    title: "Stylish HairCut",
+    description:
+      "Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Duis at tellus at urna CALISTA's mattis. Viverra tellus in hac habitasse platea dictumst.",
+    video: hair2
   },
   {
-    title: "SPA TREATMENT",
+    title: "Bridal MakeUp",
     description:
-      "Relax and rejuvenate with our luxury spa experiences. Your wellness is our priority.",
-    video:
-      "https://videos.pexels.com/video-files/3998266/3998266-uhd_2732_1440_25fps.mp4"
+      "Magnis dis parturient montes nascetur ridiculus mus mauris vitae. Duis at tellus at urna CALISTA's mattis. Viverra tellus in hac habitasse platea dictumst.",
+    video: hair3
   },
-  {
-    title: "Bridal Makeup",
-    description:
-      "Feel the serenity and leave your stress behind with our holistic therapies.",
-    video:
-      "https://videos.pexels.com/video-files/32315931/13783020_1920_1080_50fps.mp4"
-  },
-  {
-    title: "MIND & BODY HEALING",
-    description:
-      "Connect with your inner peace in a calming environment with expert therapists.",
-    video:
-      "https://videos.pexels.com/video-files/32315939/13782955_640_360_50fps.mp4"
-  },
-  {
-    title: "REFRESH YOURSELF",
-    description:
-      "Explore rejuvenating wellness packages specially tailored for you.",
-    video:
-      "https://videos.pexels.com/video-files/3181733/3181733-uhd_2560_1440_25fps.mp4"
-  }
+ 
 ];
 
 const Banner = () => {
@@ -46,7 +38,7 @@ const Banner = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 3000);
+    }, 7000);
 
     return () => clearInterval(interval); // cleanup
   }, []);
